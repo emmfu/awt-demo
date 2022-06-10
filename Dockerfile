@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Copy the jar produced from the mvn clean package phase from the target to the inside of the container
-COPY /awt-demo/target/awt-demo-0.0.1-SNAPSHOT.jar awt-demo-0.0.1-SNAPSHOT.jar
+COPY /target/awt-demo-0.0.1-SNAPSHOT.jar awt-demo-0.0.1-SNAPSHOT.jar
 
 # Expose port 5000 of the container
 EXPOSE 5000
