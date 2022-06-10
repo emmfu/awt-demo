@@ -8,6 +8,7 @@ public class TestController {
 
 	@GetMapping("/health")
 	public String health() {
-		return "Welcome to AWS";
+		String response =  "Welcome to AWS";
+		return response;
 	}
 }
